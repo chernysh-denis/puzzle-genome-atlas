@@ -4,14 +4,17 @@
 
 - Lifecycle: `Active`
 - Claim status: `Observation`
-- Evidence quality: `Direct`
+- Evidence quality: `Corroborated`
 - Confidence: `High`
 - Definition: every decision-relevant element of the current board is visible
   before the player acts.
-- Includes: the complete tile layout and values on the standard 2048 board.
+- Includes: the complete tile layout and values on the standard 2048 board; all
+  Rubik's Cube stickers, inspectable by changing viewpoint before a move.
 - Excludes: knowledge of future random events.
-- Evidence: [2048 decomposition](../games/0-9/2048.md).
-- Novelty: not assessed; this is part of the baseline genome.
+- Parameters: simultaneous display versus sequential inspection.
+- Evidence: [2048 decomposition](../games/0-9/2048.md) and
+  [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
+- Novelty: not assessed.
 
 ## INF-002 — Unpreviewed random future event
 

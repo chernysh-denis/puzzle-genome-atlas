@@ -66,11 +66,17 @@ This is a classification integrity problem, not a naming preference.
 - Earlier analysis: 2048 gains stable IDs and a claim ledger.
 - Novelty claims: none affected because none existed.
 
-## Open test
+## Test result — 2026-07-28
 
-Rubik's Cube will test whether permutation, orientation and reachability can be
-represented within the six types. A new type must not be added unless the
-existing model causes systematic distortion across more than one family.
+[`GAME-0002` — Rubik's Cube](../../knowledge/games/m-r/rubiks-cube.md)
+represented permutation and orientation as state parameters under
+`CON-004`, not as new types. Direct layer rotation, global reachability
+invariants, primitive reversibility, reconstruction objective and self-paced
+time fit the existing registries. Its System Behaviour set is validly empty.
+
+The six-type model, genome signature, proper-subset combination rule and
+exact/near comparison all remained executable. No concrete failure case was
+found, so this accepted change needs no follow-up proposal.
 
 ## Decision
 

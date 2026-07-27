@@ -14,3 +14,19 @@
 - Parameters: direction set, affected topology, movement distance.
 - Evidence: [2048 decomposition](../games/0-9/2048.md).
 - Novelty: not assessed; this is part of the baseline genome.
+
+## ACT-002 — Direct layer rotation
+
+- Lifecycle: `Active`
+- Claim status: `Observation`
+- Evidence quality: `Corroborated`
+- Confidence: `High`
+- Definition: the player directly selects a coupled layer of elements and
+  rotates that layer as one rigid action.
+- Includes: an outer face-layer turn of a standard 3 × 3 Rubik's Cube.
+- Excludes: rotating the whole object only to change viewpoint; rotating one
+  element independently; an automatic rotation caused by another action.
+- Parameters: available axes, selectable layers, permitted turn angles and move
+  metric.
+- Evidence: [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
+- Novelty: not assessed.

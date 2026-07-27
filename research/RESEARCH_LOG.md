@@ -52,3 +52,17 @@ excluded.
 - Recorded the scope as an amendment to
   [`ADR-001`](../docs/architecture-decisions/ADR-001-scalable-knowledge-architecture.md).
 - No game evidence, gene ID or novelty conclusion changed.
+
+## 2026-07-28 — Rubik's Cube architecture stress test
+
+- Added the complete sourced
+  [`GAME-0002`](../knowledge/games/m-r/rubiks-cube.md) decomposition.
+- Reused `CON-001` and `INF-001`; admitted five bounded genes for direct layer
+  rotation, invariant-constrained reachability, primitive reversibility,
+  configuration reconstruction and self-paced sequential action.
+- Registered `COMB-0002` as a proper subset of the seven-gene genome.
+- Found no System Behaviour gene and no failure of the six-type model.
+- Compared the full signature with `GAME-0001`: two shared typed genes and
+  structural Jaccard score `2 / 19 = 0.105263`.
+- Selected Minesweeper next for maximum expected information gain, chiefly to
+  test hidden state and randomness-at-setup boundaries.

@@ -32,6 +32,7 @@ change; stable paths should not.
 ## Completed
 
 - [`GAME-0001` — 2048](0-9/2048.md)
+- [`GAME-0002` — Rubik's Cube](m-r/rubiks-cube.md)
 
 Use the [game-analysis template](../../templates/GAME_ANALYSIS_TEMPLATE.md) and
 follow [CONTRIBUTING.md](../../CONTRIBUTING.md). The

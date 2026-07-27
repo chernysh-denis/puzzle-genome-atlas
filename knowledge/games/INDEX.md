@@ -8,6 +8,7 @@ Detailed prose belongs only in the relevant game analyses.
 | ID | Game | Genome signature `(ACT; SYS; CON; INF; OBJ; TIM)` | Family | Analysis status | Primary combination | Reviewed |
 |---|---|---|---|---|---|---|
 | `GAME-0001` | [2048](0-9/2048.md) | `ACT-001; SYS-001,SYS-002,SYS-003,SYS-004; CON-001,CON-002,CON-003; INF-001,INF-002; OBJ-001,OBJ-002,OBJ-003; TIM-001` | Slide-and-merge | `reviewed` | [`COMB-0001`](../combinations/COMB-0001.md) | 2026-07-27 |
+| `GAME-0002` | [Rubik's Cube](m-r/rubiks-cube.md) | `ACT-002; ; CON-001,CON-004,CON-005; INF-001; OBJ-004; TIM-002` | Twisty permutation | `reviewed` | [`COMB-0002`](../combinations/COMB-0002.md) | 2026-07-28 |
 
 ## Stable path shards
 

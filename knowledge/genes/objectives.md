@@ -36,3 +36,20 @@
 - Excludes: maximising score independently of terminal mobility.
 - Evidence: [2048 decomposition](../games/0-9/2048.md).
 - Novelty: not assessed; this is part of the baseline genome.
+
+## OBJ-004 — Reconstruct specified configuration
+
+- Lifecycle: `Active`
+- Claim status: `Observation`
+- Evidence quality: `Corroborated`
+- Confidence: `High`
+- Definition: transform the existing components into a declared target
+  arrangement.
+- Includes: restoring a Rubik's Cube so that each face has one colour relative
+  to its fixed centres.
+- Excludes: reaching a scalar value; maximising score; merely keeping another
+  action available.
+- Parameters: target equivalence, permitted whole-object orientations and
+  alignment tolerance.
+- Evidence: [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
+- Novelty: not assessed.

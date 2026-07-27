@@ -11,7 +11,7 @@ adaptive and evidence-driven.
 - [x] Separate canonical knowledge from active research.
 - [x] Add scalable paths, indexes and architecture rules.
 - [x] Complete `GAME-0001` — 2048.
-- [ ] Complete `GAME-0002` — Rubik's Cube.
+- [x] Complete `GAME-0002` — Rubik's Cube.
 
 ## v0.2 — Diverse reference corpus
 

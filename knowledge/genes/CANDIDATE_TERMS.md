@@ -7,6 +7,14 @@ evidence and analysed examples.
 Promotion follows the [gene registry rules](README.md). No term in this file
 supports a novelty claim.
 
+Bounded instances may be active while a broader inherited word remains
+candidate vocabulary. Current mappings are:
+
+- layer rotation → `ACT-002`; generic `rotate` remains broader;
+- reconstruct a specified configuration → `OBJ-004`;
+- self-paced sequential action → `TIM-002`; other turn structures remain
+  candidates.
+
 ## Action candidates
 
 Select, move, swap, slide, push, pull, rotate, flip, place, remove, stack,
@@ -35,8 +43,7 @@ sequence, synchronisation, irreversibility, probability, opponent pressure.
 
 Clear board, reach target value, sort groups, form pattern, complete routes,
 maintain system, survive, maximise score, minimise moves, trigger cascade,
-balance quantities, reveal information, capture territory, deliver objects,
-reconstruct state.
+balance quantities, reveal information, capture territory, deliver objects.
 
 ## Information candidates
 
@@ -46,9 +53,8 @@ resolution.
 
 ## Time candidates
 
-Static turn-based, turn-based with automatic resolution, real-time, real-time
-with pause, simultaneous planning and resolution, delayed actions across future
-turns.
+Turn-based with automatic resolution, real-time, real-time with pause,
+simultaneous planning and resolution, delayed actions across future turns.
 
 ## Promotion questions
 

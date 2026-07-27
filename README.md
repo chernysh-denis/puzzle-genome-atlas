@@ -102,8 +102,9 @@ The operational workflow is maintained once in
 [CONTRIBUTING.md](CONTRIBUTING.md). It points to the required template,
 comparison formula, evidence rules and registries.
 
-The current corpus begins with
-[`GAME-0001` — 2048](knowledge/games/0-9/2048.md). The adaptive
+The current corpus contains
+[`GAME-0001` — 2048](knowledge/games/0-9/2048.md) and
+[`GAME-0002` — Rubik's Cube](knowledge/games/m-r/rubiks-cube.md). The adaptive
 [research plan](docs/RESEARCH_PLAN.md) owns the next-subject decision.
 
 ## Add new knowledge
@@ -123,8 +124,8 @@ Do not submit raw ideas, reskins or unsupported novelty claims. Start with
 ## Project status
 
 - Stage: taxonomy and evidence collection
-- Active genes: baseline genes evidenced by `GAME-0001`
-- Verified combinations: `COMB-0001`
+- Active genes: bounded genes evidenced by `GAME-0001` and `GAME-0002`
+- Verified combinations: `COMB-0001`, `COMB-0002`
 - Novelty claims: none
 - Prototyping: not started
 
