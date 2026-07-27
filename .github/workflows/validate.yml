@@ -1,0 +1,23 @@
+name: Validate knowledge base
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate records and links
+        run: python3 scripts/validate_repository.py
+
+      - name: Lint Markdown
+        run: npx --yes markdownlint-cli2@0.23.2 '**/*.md'
