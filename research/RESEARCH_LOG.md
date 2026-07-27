@@ -17,8 +17,10 @@ This log records concise, structured results that change the public Atlas corpus
 - Recorded 2048 as the baseline genome; no novelty claim can be made against an empty prior corpus.
 - Selected Rubik's Cube as the next analysis for expected structural distance.
 
-## 2026-07-27 — Public research release preparation
+## 2026-07-27 — Public research release
 
 - Added public governance, contribution and licensing files.
 - Separated structured public research from ignored local notes and logs.
 - Added the first-version research roadmap and directory-level publication rules.
+- Published the reviewed corpus at
+  [`chernysh-denis/project-atlas`](https://github.com/chernysh-denis/project-atlas).
