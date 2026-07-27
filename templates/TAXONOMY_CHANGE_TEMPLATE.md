@@ -3,28 +3,31 @@
 ## Status
 
 - Proposal status: `Proposed` / `Accepted` / `Rejected` / `Superseded`
-- Evidence status: `Observation` / `Pattern` / `Confirmed Pattern`
+- Claim status: `Observation` / `Hypothesis` / `Pattern` / `Strong Pattern` /
+  `Confirmed`
+- Evidence quality: `Direct` / `Corroborated` / `Limited` / `Conflicting`
+- Confidence: `Low` / `Medium` / `High`
 - Date:
-- Triggering game:
+- Trigger:
 
 ## Current classification
 
-- Exact current wording:
+- Exact wording or stable IDs:
 - Files and entries affected:
 - Original evidence or rationale:
 
 ## Detected problem
 
-- What is incorrect, ambiguous or at the wrong layer:
-- How the error was found:
-- Why this is a classification issue rather than a synonym or theme change:
+- What is incorrect, ambiguous or at the wrong type:
+- How the problem was found:
+- Why this changes decision structure rather than terminology or theme:
 
 ## Evidence
 
 - Primary sources:
-- Direct gameplay or reproducible transition:
-- Earlier analysed games checked:
-- External games or literature checked:
+- Reproducible transitions:
+- Analysed games checked:
+- External systems or literature checked:
 - Counterevidence:
 
 ## Proposed change
@@ -32,13 +35,14 @@
 - Old classification:
 - Proposed classification:
 - Definitions and boundaries:
-- What does **not** change:
+- Lifecycle effects:
+- What does not change:
 
-## Genome and matrix impact
+## Genome and combination impact
 
-- Genes added, removed, split or merged:
-- Matrix rows affected:
-- Earlier analyses requiring annotation:
+- Genes added, deprecated, merged or split:
+- Games requiring annotation:
+- Combinations affected:
 - Novelty claims affected:
 
 ## Decision

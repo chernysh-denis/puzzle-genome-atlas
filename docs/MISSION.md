@@ -2,7 +2,9 @@
 
 ## Goal
 
-Build a defensible map of fundamental puzzle mechanics and use it to discover promising combinations that are not already established game patterns.
+Build a defensible knowledge base of fundamental puzzle genes, classify their
+known combinations and identify areas that remain weakly explored after
+external research.
 
 ## Non-goals
 
@@ -13,7 +15,7 @@ Build a defensible map of fundamental puzzle mechanics and use it to discover pr
 - designing monetisation before proving the core loop;
 - repeating the same theory in different words.
 
-## Definition of a promising mechanic
+## Gate for a future candidate
 
 A candidate should ideally have:
 
@@ -32,4 +34,7 @@ A candidate should ideally have:
 
 Novelty does not mean a new visual theme.
 
-A candidate is meaningfully novel when the interaction between its action, system behaviour and constraint creates a decision structure not already common in existing games.
+A candidate is meaningfully novel only when the interaction between its typed
+genes creates a decision structure not already common in existing games.
+
+Absence from the current corpus is not evidence of novelty.

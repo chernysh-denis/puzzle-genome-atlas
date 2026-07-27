@@ -14,14 +14,15 @@ List primary sources, direct gameplay transitions and relevant secondary sources
 - Combination status:
 - Closest prior structure:
 - Taxonomy impact:
-- Matrix impact:
+- Index impact:
 
 ## Checklist
 
-- [ ] Every substantive claim has an evidence status.
+- [ ] Every substantive claim has status, evidence quality and confidence.
 - [ ] Primary sources are linked where available.
 - [ ] Confidence, uncertainty and counterexamples are explicit.
-- [ ] The genome was compared with every earlier game analysis.
+- [ ] The complete indexed corpus was scanned.
 - [ ] `New genes: none` is written when applicable.
 - [ ] Any taxonomy correction has a linked `TAXONOMY_CHANGE_xxx.md`.
+- [ ] Stable gene, game and combination IDs are preserved.
 - [ ] No private notes, credentials, raw ideas or unrelated files are included.

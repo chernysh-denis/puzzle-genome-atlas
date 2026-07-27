@@ -1,94 +1,163 @@
-# Project Atlas
+# Puzzle Genome Atlas
 
-**Project Atlas is an open research project that maps the fundamental mechanics of puzzle games.**
+**Puzzle Genome Atlas is an open knowledge base for the fundamental,
+reusable mechanics of puzzles.**
 
-Its goal is not to invent a game prematurely. Atlas decomposes existing puzzles into comparable mechanical genes, maps combinations that already exist, and only then investigates combinations that may be genuinely underexplored.
+It is not a game catalogue, genre database or collection of ideas. It
+decomposes puzzles into typed mechanical **genes**, records verified
+combinations and investigates areas that may be underexplored.
 
-## The problem
+## Why this exists
 
-Puzzle games are usually catalogued by genre, theme, platform or popularity. Those labels do not answer the questions Atlas is built around:
+Genres and themes describe products, not decision structures. Two games can
+look unrelated while using the same mechanical structure; two visually similar
+games can ask the player to reason in fundamentally different ways.
 
-1. What fundamental player actions, system behaviours and constraints exist?
-2. Which combinations of those mechanics have already been used?
-3. Which combinations are absent, rare or poorly studied?
+Puzzle Genome Atlas asks:
 
-Atlas treats novelty as a research claim, not a creative adjective. A new theme, interface or numerical tuning is not a new mechanic.
+1. What are the smallest reusable mechanical components of a puzzle?
+2. Which combinations of those components already exist?
+3. Which apparent gaps survive historical and external research?
 
-## How Atlas differs from a game catalogue
+The project maps before it invents. Prototypes begin only after the knowledge
+base can support a defensible novelty investigation.
 
-| Conventional catalogue | Project Atlas |
+## The gene model
+
+A gene is a bounded, evidence-backed unit of mechanics. It must have a stable
+ID, operational definition, inclusion and exclusion boundaries, sources and an
+analysed example.
+
+| Type | Prefix | Meaning |
+|---|---|---|
+| Action Gene | `ACT` | What the player directly commands |
+| System Behaviour Gene | `SYS` | What the system resolves automatically |
+| Constraint Gene | `CON` | What limits legal or useful action |
+| Information Gene | `INF` | What can be known, and when |
+| Objective Gene | `OBJ` | What state or measurement is pursued |
+| Time Gene | `TIM` | How actions and resolution are scheduled |
+
+An attractive verb is not automatically a gene. Undefined vocabulary remains
+a candidate term until evidence gives it a stable boundary. If the six-type
+model proves inadequate, the project will propose a documented taxonomy change
+instead of forcing evidence into the wrong category.
+
+Read the full [gene admission rules](knowledge/genes/README.md).
+
+## How knowledge is added
+
+```text
+Source-backed observations
+          ↓
+Full game decomposition
+          ↓
+Typed genome with stable gene IDs
+          ↓
+Full-corpus signature scan
+          ↓
+Verified combination or research lead
+          ↓
+Novelty research, only when justified
+```
+
+Every new game is checked against the complete indexed corpus. Exact matches
+are recorded centrally; only the nearest decision-relevant neighbours receive
+long prose comparisons. This avoids duplicating hundreds of pairwise tables as
+the corpus grows.
+
+## Evidence model
+
+Claim status and evidence strength are separate.
+
+### Claim status
+
+- `Observation` — a directly recorded fact.
+- `Hypothesis` — a falsifiable proposed explanation or prediction.
+- `Pattern` — a recurring relationship supported by multiple observations.
+- `Strong Pattern` — a pattern reproduced across mechanically distinct
+  families with counterexamples actively checked.
+- `Confirmed` — a bounded claim independently verified within its stated scope.
+
+### Evidence quality
+
+- `Direct`
+- `Corroborated`
+- `Limited`
+- `Conflicting`
+
+Each claim also receives `Low`, `Medium` or `High` confidence. The project does
+not use `Law`; no current evidence justifies universal mechanical laws.
+
+See [Evidence Model](docs/EVIDENCE_MODEL.md) for promotion and downgrade rules.
+
+## Repository map
+
+| Path | Purpose |
 |---|---|
-| Groups games by genre or presentation | Decomposes games into normalised mechanical genes |
-| Describes what a game looks like | Records player actions, system responses, constraints, information, time and objectives |
-| Lists similar titles | Compares every new game with every previously analysed genome |
-| May call an unusual theme novel | Requires external evidence before any novelty claim |
-| Focuses on successful or popular releases | Includes classical, mathematical, mechanical, historical, academic and experimental puzzles |
+| [`docs/`](docs/ARCHITECTURE.md) | Mission, method, evidence model and research plan |
+| [`knowledge/genes/`](knowledge/genes/README.md) | Canonical typed gene registry |
+| [`knowledge/games/`](knowledge/games/INDEX.md) | Evidence-backed game genomes |
+| [`knowledge/combinations/`](knowledge/combinations/INDEX.md) | Verified structural combinations |
+| [`research/`](research/RESEARCH_LOG.md) | Leads, taxonomy proposals, candidates and negative results |
+| [`templates/`](templates/GAME_ANALYSIS_TEMPLATE.md) | Required contribution formats |
+| [`scripts/`](scripts/validate_repository.py) | Dependency-free integrity validation |
 
-## The Atlas method
+Canonical knowledge and open investigation are intentionally separate. The
+[architecture document](docs/ARCHITECTURE.md) explains how this remains usable
+at 100, 500 and 1000 game analyses.
 
-Each game analysis separates six layers:
+## Analyse a new game
 
-1. **Player actions** — what the player directly commands.
-2. **System behaviours** — what resolves automatically.
-3. **Constraints** — what limits access, capacity, sequence or choice.
-4. **Information model** — what is visible, hidden, random or previewed.
-5. **Time model** — how actions and resolution are scheduled.
-6. **Objectives and evaluation** — what counts as progress, success or failure.
+1. Read the [mission](docs/MISSION.md),
+   [research principles](docs/RESEARCH_PRINCIPLES.md) and
+   [evidence model](docs/EVIDENCE_MODEL.md).
+2. Check the [game index](knowledge/games/INDEX.md), gene registries and
+   combination index.
+3. Choose a game that adds mechanical diversity rather than a near-duplicate of
+   the most recent subject.
+4. Copy the [game-analysis template](templates/GAME_ANALYSIS_TEMPLATE.md).
+5. Prefer original rules, source code, direct play and primary historical
+   records.
+6. Encode the genome with existing IDs; propose new genes only with boundaries
+   and evidence.
+7. Scan the full corpus for exact matches and document the closest neighbours.
+8. Update indexes, combinations, taxonomy proposals and the public research
+   log.
 
-Claims use a conservative evidence ladder:
+The current completed corpus begins with
+[`GAME-0001` — 2048](knowledge/games/0-9/2048.md). Rubik's Cube is next because
+it provides a high-distance test of reversible permutation, orientation and
+reachability.
 
-`Observation → Pattern → Confirmed Pattern → Law`
+## Add new knowledge
 
-Codex and contributors may not assign `Law`; that status requires explicit human review after broad cross-family evidence.
+Contributions may add:
 
-After every decomposition, Atlas reports one genome result:
+- a complete game decomposition;
+- primary or historical evidence;
+- a counterexample;
+- a gene-boundary correction;
+- a verified combination;
+- a structured negative result.
 
-- `New gene`
-- `New combination of known genes`
-- `Full structural match`
+Do not submit raw ideas, reskins or unsupported novelty claims. Start with
+[CONTRIBUTING.md](CONTRIBUTING.md) and use the relevant template.
 
-If no new gene was found, the analysis must state that directly.
+## Project status
 
-## Current status
-
-Atlas is in **Stage 1: taxonomy and evidence collection**.
-
-- First completed decomposition: [2048](research/games/2048.md)
-- Current next subject: Rubik's Cube, selected for maximum expected mechanical distance from 2048
-- Prototyping: not started
+- Stage: taxonomy and evidence collection
+- Active genes: baseline genes evidenced by `GAME-0001`
+- Verified combinations: `COMB-0001`
 - Novelty claims: none
+- Prototyping: not started
 
-See the [research plan](06_RESEARCH_PLAN.md) for the adaptive analysis queue and the [v1 roadmap](ROADMAP.md) for release criteria.
+See the adaptive [research plan](docs/RESEARCH_PLAN.md) and
+[v1 roadmap](ROADMAP.md).
 
-## Start reading
+## Public scope
 
-- [Mission and boundaries](00_MISSION.md)
-- [Research principles](01_RESEARCH_PRINCIPLES.md)
-- [Evidence model](02_EVIDENCE_MODEL.md)
-- [Working hypotheses](03_WORKING_HYPOTHESES.md)
-- [Mechanics taxonomy](04_MECHANICS_TAXONOMY.md)
-- [Combination matrix](05_COMBINATION_MATRIX.md)
-- [Research plan](06_RESEARCH_PLAN.md)
-- [Public research log](research/RESEARCH_LOG.md)
-- [Game analyses](research/games/README.md)
+Only structured research is versioned. Personal notes, local logs, credentials,
+raw idea dumps and unfinished scratch work remain excluded.
 
-## Contributing
-
-Contributions are welcome from puzzle players, designers, historians and researchers.
-
-The shortest useful contribution path is:
-
-1. Open an issue proposing a mechanically diverse puzzle or a correction.
-2. Prefer primary sources, direct gameplay evidence and reproducible rule transitions.
-3. Use the appropriate file in [`templates/`](templates/).
-4. Compare a new game with every existing analysis and update the matrix.
-
-Do not submit raw game ideas, reskins or unsupported novelty claims. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the research workflow and review checklist.
-
-## Public research scope
-
-This repository publishes structured research materials only. Personal notes, local logs, credentials, raw idea dumps and unfinished scratch work are excluded from version control.
-
-## License and conduct
-
-Research text and repository materials are available under the [MIT License](LICENSE). Participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
+Puzzle Genome Atlas is available under the [MIT License](LICENSE). Participation
+is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).

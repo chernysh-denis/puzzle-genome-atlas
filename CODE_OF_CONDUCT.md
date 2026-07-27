@@ -2,7 +2,7 @@
 
 ## Our standard
 
-Project Atlas is a collaborative research space. Participants must:
+Puzzle Genome Atlas is a collaborative research space. Participants must:
 
 - discuss evidence and methods rather than attacking people;
 - welcome corrections, counterexamples and negative results;
@@ -19,7 +19,8 @@ Good-faith errors are not misconduct. Contributors are expected to correct them 
 
 ## Scope
 
-This code applies in repository issues, pull requests, reviews, discussions and other spaces where a participant represents Project Atlas.
+This code applies in repository issues, pull requests, reviews, discussions and
+other spaces where a participant represents Puzzle Genome Atlas.
 
 ## Enforcement
 

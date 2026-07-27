@@ -1,57 +1,65 @@
-# Project Atlas Research Roadmap
+# Puzzle Genome Atlas Roadmap
 
-This roadmap defines the first public research version. Analysis order remains adaptive: the next subject is selected for expected information gain, not list position.
+The roadmap defines the first public knowledge release. Analysis order remains
+adaptive and evidence-driven.
 
-## v0.1 — Public research foundation
+## v0.1 — Stable foundation
 
-- [x] Define mission, non-goals and evidence-first principles.
-- [x] Establish the evidence ladder and genome-comparison protocol.
-- [x] Publish contribution, conduct, licensing and taxonomy-change procedures.
-- [x] Complete the first reference decomposition: 2048.
-- [ ] Complete the first high-distance comparison: Rubik's Cube.
+- [x] Define mission and non-goals.
+- [x] Separate claim status, evidence quality and confidence.
+- [x] Establish typed genes with stable IDs.
+- [x] Separate canonical knowledge from active research.
+- [x] Add scalable paths, indexes and architecture rules.
+- [x] Complete `GAME-0001` — 2048.
+- [ ] Complete `GAME-0002` — Rubik's Cube.
 
 ## v0.2 — Diverse reference corpus
 
 - [ ] Cover at least eight mechanically distinct puzzle families.
-- [ ] Include digital, classical board, mathematical and mechanical puzzles.
-- [ ] Avoid consecutive analyses from the same narrow family.
-- [ ] Compare every new genome with every earlier decomposition.
-- [ ] Record negative results and full structural matches.
+- [ ] Include digital, classical, mathematical and mechanical puzzles.
+- [ ] Scan the full indexed corpus for every new genome.
+- [ ] Record exact matches, negative results and counterexamples.
+- [ ] Test the six gene types against high-distance systems.
 
-Suggested coverage targets include Rubik's Cube, Minesweeper, Tetris, FreeCell, Sudoku, Sokoban, Nonogram and a connection/flow puzzle. This is a coverage set, not a fixed order.
+Coverage targets include Rubik's Cube, Minesweeper, Tetris, FreeCell, Sudoku,
+Sokoban, Nonogram and a connection/flow puzzle. This is not a fixed order.
 
-## v0.3 — Normalised taxonomy
+## v0.3 — Normalised gene registry
 
-- [ ] Define 40–60 elementary player actions with boundaries and examples.
-- [ ] Define 25–40 automatic system behaviours.
-- [ ] Define 20–30 constraints and scarce resources.
-- [ ] Merge synonyms and document decision-relevant distinctions.
-- [ ] Audit every taxonomy correction through `TAXONOMY_CHANGE_xxx.md`.
+- [ ] Define every evidenced gene with boundaries and examples.
+- [ ] Require a reuse or counterexample review before treating a gene as
+  cross-family.
+- [ ] Expand all six types only when completed analyses require them.
+- [ ] Merge synonyms without reusing stable IDs.
+- [ ] Audit every classification change.
 
 ## v0.4 — Evidence-backed combination map
 
-- [ ] Attach sources and confidence to every established matrix entry.
-- [ ] Separate known, niche, overlapping, unverified and rejected combinations.
-- [ ] Add historical and academic evidence, not only current commercial examples.
-- [ ] Identify sparse cells without calling them novel.
+- [ ] Attach evidence and confidence to every verified combination.
+- [ ] Separate verified structures from research leads.
+- [ ] Add historical and academic evidence.
+- [ ] Identify sparse regions without calling them novel.
+- [ ] Add index generation when manual maintenance becomes error-prone.
 
 ## v0.5 — Gap research
 
-- [ ] Select the strongest sparse combinations for explicit novelty searches.
-- [ ] Search historical catalogues, game jams, prototypes, papers and commercial releases.
+- [ ] Select the strongest sparse regions for explicit novelty searches.
+- [ ] Search games, historical catalogues, game jams, prototypes and papers.
 - [ ] Publish counterexamples and rejected novelty claims.
-- [ ] Advance only combinations that remain mechanically distinct and readable.
+- [ ] Advance only mechanically distinct and readable candidates.
 
-## v1.0 — First research map
+## v1.0 — First Puzzle Genome Map
 
 Version 1.0 requires:
 
 - at least 20 complete, sourced game decompositions;
-- representation from at least eight mechanically distinct puzzle families;
-- genome comparison against the full analysed corpus for every game;
-- an evidence status and confidence boundary for every substantive claim;
-- an audited mechanics taxonomy and sourced combination matrix;
+- at least eight mechanically distinct puzzle families;
+- stable typed genome IDs for every analysed game;
+- a full-corpus signature scan for every decomposition;
+- status, evidence quality and confidence for every substantive claim;
+- an audited gene registry and verified combination index;
 - documented negative results and taxonomy changes;
 - no unresolved unsupported novelty claim.
 
-Prototyping begins only after a candidate survives the v1.0 map and a dedicated novelty review.
+Prototyping begins only after a candidate survives the v1.0 map and dedicated
+novelty review.

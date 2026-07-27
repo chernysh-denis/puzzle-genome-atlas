@@ -1,80 +1,159 @@
-# Game: GAME_NAME
+---
+game_id: GAME-XXXX
+slug: GAME_SLUG
+game_title: GAME_TITLE
+analysis_status: draft
+reviewed: YYYY-MM-DD
+combination_ids: []
+gene_ids:
+  action: []
+  system: []
+  constraint: []
+  information: []
+  objective: []
+  time: []
+---
 
-## Evidence convention
+# Game: GAME_TITLE
 
-- Prefix every substantive claim with `[Observation]`, `[Pattern]` or `[Confirmed Pattern]`.
-- Never assign `[Law]`; only record it when explicit human review has already granted that status.
-- A high-confidence fact about one game is still an observation.
+## Analysis scope
+
+- Version / ruleset:
+- Included:
+- Excluded:
+- Direct-play status:
+
+## Claim ledger
+
+Sections may inherit these labels by claim ID. Add a row for every substantive
+claim that is not a simple citation or question.
+
+| ID | Claim | Status | Evidence | Confidence | Sources |
+|---|---|---|---|---|---|
+| `C-GAME-001` | | Observation / Hypothesis / Pattern / Strong Pattern / Confirmed | Direct / Corroborated / Limited / Conflicting | Low / Medium / High | |
 
 ## Basic data
 
-- [Status] Release / origin:
-- [Status] Platform:
-- [Status] Puzzle family:
-- [Observation] Sources:
+- Release / origin:
+- Platform or physical form:
+- Puzzle family:
+- Primary sources:
+- Secondary sources:
+- Claim IDs:
 
 ## Mechanical decomposition
 
-- [Status] Elementary player actions:
-- [Status] Automatic system behaviours:
-- [Status] Constraints:
-- [Status] Information model:
-- [Status] Time model:
-- [Status] Objective:
-- [Status] Failure condition:
+### Action Genes
 
-## Strategic depth
+- Existing gene IDs:
+- Candidate genes:
+- Parameters:
+- Claim IDs:
 
-- [Status] Local decision:
-- [Status] Medium-term planning:
-- [Status] Long-term structure:
-- [Status] Scarce strategic resource:
-- [Status] Common discovered heuristics:
+### System Behaviour Genes
 
-## Replay structure
+- Existing gene IDs:
+- Candidate genes:
+- Resolution order:
+- Parameters:
+- Claim IDs:
 
-- [Status] What changes between sessions:
-- [Status] Randomness:
-- [Status] Procedural generation:
-- [Status] Multiple viable strategies:
-- [Status] Typical reason for replay:
+### Constraint Genes
 
-## Player trust
+- Existing gene IDs:
+- Candidate genes:
+- Scarce strategic resources:
+- Claim IDs:
 
-- [Status] Can failure be understood?
-- [Status] Does progression remain believable?
-- [Status] Artificial walls?
+### Information Genes
 
-## Adjacent games
+- Existing gene IDs:
+- Candidate genes:
+- Claim IDs:
 
-- [Status] Direct predecessors:
-- [Status] Variants:
-- [Status] Similar games:
+### Objective Genes
 
-## Atlas classification
+- Existing gene IDs:
+- Candidate genes:
+- Success, evaluation and failure:
+- Claim IDs:
 
-`Action + System behaviour + Constraint`
+### Time Genes
 
-## Genome comparison
+- Existing gene IDs:
+- Candidate genes:
+- Claim IDs:
 
-- Normalised genome:
-  - Player-action genes:
-  - System-behaviour genes:
-  - Constraint genes:
-  - Information-model genes:
-  - Time-model genes:
-  - Objective/evaluation genes:
-- Previously analysed games compared:
-- Per-game comparison:
+## Reproducible transitions
 
-| Earlier game | Shared genes | Different genes | Core structural match? |
+Record edge cases that distinguish the rules from nearby systems.
+
+| Before | Action | Deterministic resolution | What it establishes | Claim ID |
+|---|---|---|---|---|
+| | | | | |
+
+## Strategic and experiential structure
+
+- Local decision:
+- Medium-term planning:
+- Long-term structure:
+- Common heuristics:
+- Failure attribution:
+- Player-trust factors:
+- Claim IDs:
+
+## Replay and variation
+
+- What changes between sessions:
+- Randomness or procedural generation:
+- Multiple viable strategies:
+- Typical replay motive:
+- Claim IDs:
+
+## Adjacent systems and history
+
+- Direct predecessors:
+- Variants:
+- Similar games:
+- Important differences:
+- Claim IDs:
+
+## Normalised genome
+
+| Type | Active gene IDs | Candidate genes or parameters |
+|---|---|---|
+| Action | | |
+| System Behaviour | | |
+| Constraint | | |
+| Information | | |
+| Objective | | |
+| Time | | |
+
+## Corpus comparison
+
+- Indexed games scanned:
+- Indexed combinations scanned:
+- Exact genome matches:
+- Exact core-combination matches:
+- Scan date:
+
+Detailed comparison is limited to the closest decision-relevant neighbours.
+
+| Neighbour | Shared genes | Decision-relevant differences | Match result |
 |---|---|---|---|
 | | | | |
 
-- New genes: `none` / list only evidenced, decision-relevant genes absent from the taxonomy and earlier analyses.
-- Combination status: `New gene` / `New combination of known genes` / `Full structural match` (`Baseline` only for the first completed game)
+- New genes: `none` / evidenced candidates requiring registry updates.
+- Combination result: `New gene` / `New combination of known genes` /
+  `Full structural match` / `Baseline`.
 - Closest prior structure:
 - Evidence and reasoning:
+
+## Taxonomy impact
+
+- Registry changes: `none` / stable IDs and links.
+- Taxonomy-change record: `none` / link.
+- Candidate terms affected:
 
 ## Open questions
 
@@ -82,19 +161,21 @@
 
 ## Нові факти
 
-- [Status]
+- [Status | Evidence | Confidence] Claim and claim ID.
 
 ## Нові гени
 
-- [Observation] `Нових генів немає` / list only supported genes.
+- [Observation | Evidence | Confidence] `Нових генів немає` / supported gene.
 
 ## Нові комбінації
 
-- [Observation] `Нових комбінацій немає` / supported combination and comparison basis.
+- [Observation | Evidence | Confidence] `Нових комбінацій немає` /
+  supported combination.
 
 ## Зміни таксономії
 
-- [Observation] `Змін таксономії немає` / link to `research/hypotheses/TAXONOMY_CHANGE_xxx.md`.
+- [Observation | Evidence | Confidence] `Змін таксономії немає` /
+  `TAXONOMY_CHANGE_xxx`.
 
 ## Нові питання
 
@@ -102,13 +183,13 @@
 
 ## Наступна рекомендована гра
 
-- [Pattern] GAME_NAME
+- [Hypothesis | Limited | Confidence] GAME_TITLE
 - Plan status: `optimal under current evidence` / `not optimal`
-- If not optimal, alternative sequence:
+- Alternative sequence, if required:
 - Optimisation criterion:
 - Expected information gain:
 - Backlog impact:
 
 ## Чому саме вона
 
-- [Observation/Pattern] Explain its expected genome distance and Atlas coverage gain.
+- [Hypothesis | Limited | Confidence] Expected genome distance and coverage gain.

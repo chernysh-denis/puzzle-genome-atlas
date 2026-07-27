@@ -1,20 +1,26 @@
 # Candidate: CANDIDATE_NAME
 
-## Combination
+## Research basis
 
-- Action:
-- System behaviour:
-- Constraint:
-- Objective:
-
-## Novelty check
-
-- Search terms:
-- Similar games found:
-- Difference from nearest equivalent:
+- Triggering lead:
+- Stable gene IDs:
+- Nearest verified combination:
+- Claim status:
+- Evidence quality:
 - Confidence:
 
-## Core loop
+## External novelty check
+
+- Search scope:
+- Search terms:
+- Commercial games checked:
+- Historical systems checked:
+- Academic and game-jam sources checked:
+- Similar systems found:
+- Decision-relevant difference:
+- Counterevidence:
+
+## Proposed decision structure
 
 1.
 2.
@@ -35,16 +41,18 @@
 
 ## Smallest test
 
-- Board:
+- Board or topology:
 - Components:
 - Allowed action:
 - Resolution rule:
-- Win condition:
+- Constraint:
+- Objective:
 - Failure condition:
 
 ## Decision
 
-- Unverified
-- Reject
-- Continue research
-- Prototype
+- `Reject`
+- `Continue research`
+- `Candidate for prototype`
+
+An unverified idea remains a research lead and does not enter this directory.
