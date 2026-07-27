@@ -1,0 +1,30 @@
+# Local and private research
+private/
+logs/
+drafts/
+research/raw/
+research/drafts/
+*_LOCAL.md
+
+# Secrets and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary and generated output
+tmp/
+temp/
+coverage/
+dist/
+build/
+*.log
