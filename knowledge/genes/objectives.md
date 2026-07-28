@@ -53,3 +53,19 @@
   alignment tolerance.
 - Evidence: [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
 - Novelty: not assessed.
+
+## OBJ-005 — Reveal every non-hazard position
+
+- Lifecycle: `Active`
+- Claim status: `Observation`
+- Evidence quality: `Corroborated`
+- Confidence: `High`
+- Definition: expose every safe position while leaving all hazardous positions
+  unexposed.
+- Includes: completing a classic Minesweeper board without detonating a mine.
+- Excludes: merely placing markers on every suspected hazard; clearing all
+  pieces from a board; maximising score without completing the safe set.
+- Parameters: whether correct markers are also required and the number of safe
+  positions.
+- Evidence: [Minesweeper decomposition](../games/m-r/minesweeper.md).
+- Novelty: not assessed.

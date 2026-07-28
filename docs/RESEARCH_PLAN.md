@@ -22,23 +22,22 @@ its mechanics are novel.
 
 The current task is listed separately below.
 
-1. Tetris
-2. FreeCell
-3. Sudoku
-4. Sokoban
-5. Nonogram
-6. Water Sort
-7. Royal Match
-8. Chess
-9. Threes
-10. Flow Free
-11. Pipe Mania
-12. Baba Is You
-13. Mini Metro
-14. Balatro
-15. Into the Breach
-16. Dorfromantik
-17. Peg Solitaire
+1. FreeCell
+2. Sudoku
+3. Sokoban
+4. Nonogram
+5. Water Sort
+6. Royal Match
+7. Chess
+8. Threes
+9. Flow Free
+10. Pipe Mania
+11. Baba Is You
+12. Mini Metro
+13. Balatro
+14. Into the Breach
+15. Dorfromantik
+16. Peg Solitaire
 
 The pool is coverage backlog, not a commitment or a novelty claim. The
 operational analysis workflow lives only in
@@ -46,17 +45,16 @@ operational analysis workflow lives only in
 
 ## Immediate next task
 
-Analyse Minesweeper next.
+Analyse Tetris next.
 
 - Claim status: `Hypothesis`
 - Evidence quality: `Limited`
 - Confidence: `Medium`
-- Reason: it introduces inaccessible latent state, information-revealing
-  actions, deduction under uncertainty and an irreversible hazard, unlike both
-  completed genomes.
-- Model test: retest the `INF-001` boundary and distinguish randomness in setup
-  from randomness during the decision loop without inventing information genes
-  prematurely.
+- Reason: it introduces continuous forced gravity, real-time input, locking,
+  line clearing and terminal stack pressure, unlike all completed genomes.
+- Model test: determine whether player-controlled transformation during
+  automatic time-driven motion separates cleanly into Action, System Behaviour,
+  Constraint and Time genes.
 
 This is the highest-information next subject under current evidence. Reassess
-after `GAME-0003`.
+after `GAME-0004`.

@@ -15,14 +15,15 @@ adaptive and evidence-driven.
 
 ## v0.2 — Diverse reference corpus
 
+- [x] Complete `GAME-0003` — Minesweeper.
 - [ ] Cover at least eight mechanically distinct puzzle families.
 - [ ] Include digital, classical, mathematical and mechanical puzzles.
 - [ ] Scan the full indexed corpus for every new genome.
 - [ ] Record exact matches, negative results and counterexamples.
 - [ ] Test the six gene types against high-distance systems.
 
-Later coverage targets include Minesweeper, Tetris, FreeCell, Sudoku, Sokoban,
-Nonogram and a connection/flow puzzle. This is not a fixed order.
+Later coverage targets include Tetris, FreeCell, Sudoku, Sokoban, Nonogram and
+a connection/flow puzzle. This is not a fixed order.
 
 ## v0.3 — Normalised gene registry
 

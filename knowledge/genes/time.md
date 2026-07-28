@@ -4,14 +4,16 @@
 
 - Lifecycle: `Active`
 - Claim status: `Observation`
-- Evidence quality: `Direct`
+- Evidence quality: `Corroborated`
 - Confidence: `High`
 - Definition: the player supplies one discrete input, after which the system
   completes all resulting state changes before accepting the next input.
-- Includes: one 2048 direction followed by movement, merges, scoring and spawn.
+- Includes: one 2048 direction followed by movement, merges, scoring and spawn;
+  one Minesweeper reveal followed by zero-region expansion.
 - Excludes: real-time input and simultaneous unresolved planning.
-- Evidence: [2048 decomposition](../games/0-9/2048.md).
-- Novelty: not assessed; this is part of the baseline genome.
+- Evidence: [2048 decomposition](../games/0-9/2048.md) and
+  [Minesweeper decomposition](../games/m-r/minesweeper.md).
+- Novelty: not assessed.
 
 ## TIM-002 — Self-paced sequential action
 

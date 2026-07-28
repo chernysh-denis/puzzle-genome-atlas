@@ -14,6 +14,15 @@ candidate vocabulary. Current mappings are:
 - reconstruct a specified configuration → `OBJ-004`;
 - self-paced sequential action → `TIM-002`; other turn structures remain
   candidates.
+- concealed-cell reveal → `ACT-003`; generic `reveal` remains broader;
+- protective hypothesis marker → `ACT-004`;
+- zero-clue region expansion → `SYS-005`; generic propagation remains broader;
+- terminal hazard exposure → `CON-006`;
+- fixed concealed current state → `INF-003`; generic hidden information remains
+  broader;
+- exact local aggregate clue → `INF-004`;
+- reveal every non-hazard position → `OBJ-005`; generic clear-board objectives
+  remain broader.
 
 ## Action candidates
 

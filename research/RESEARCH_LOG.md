@@ -66,3 +66,20 @@ excluded.
   structural Jaccard score `2 / 19 = 0.105263`.
 - Selected Minesweeper next for maximum expected information gain, chiefly to
   test hidden state and randomness-at-setup boundaries.
+
+## 2026-07-28 — Minesweeper hidden-state decomposition
+
+- Added the sourced
+  [`GAME-0003`](../knowledge/games/m-r/minesweeper.md) decomposition.
+- Distinguished fixed concealed current state from both fully visible state and
+  an unpreviewed random future event.
+- Added seven bounded genes for cell reveal, protective hypothesis marking,
+  zero-clue expansion, terminal hazard exposure, concealed state, exact local
+  clues and safe-cell completion.
+- Reused `CON-001` and `TIM-001`; registered proper-subset `COMB-0003`.
+- Excluded random mine placement from in-play `SYS-004` because the scoped
+  field is fixed during the decision loop.
+- Found `GAME-0001` to be the formal near match at `2 / 21 = 0.095238`; no
+  exact genome or existing combination match was found.
+- Selected Tetris next to test real-time action during automatic
+  time-driven state change.

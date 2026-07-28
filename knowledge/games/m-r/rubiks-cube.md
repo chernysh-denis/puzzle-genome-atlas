@@ -324,8 +324,9 @@ algorithms.
 - The physical mechanism constrains player action; it is not autonomous System
   Behaviour.
 - `INF-001` accommodates sequential inspection because all state remains
-  inspectable before action. This boundary should be retested on a genuinely
-  hidden-information game; no definition is broadened here.
+  inspectable before action. [`GAME-0003`](minesweeper.md) confirms the
+  exclusion boundary: fixed mine locations cannot be inspected and therefore
+  use `INF-003`.
 - Exact and near matching are mathematically executable. The one-game prior
   corpus exposes the intended limitation of relative near matching, not a
   contradiction.
@@ -374,10 +375,9 @@ No System Behaviour gene was added. The remaining relevant properties reuse
 
 ## Нові питання
 
-- TODO: retest whether sequential physical inspection remains inside `INF-001`
-  when `GAME-0003` introduces genuinely hidden state. It is deliberately
-  deferred because Rubik's Cube has no inaccessible decision-relevant state and
-  therefore supplies no failure case.
+- Resolved 2026-07-28: `GAME-0003` distinguishes genuinely inaccessible mine
+  locations (`INF-003`) from Rubik's Cube's sequentially inspectable state
+  (`INF-001`); the original boundary remains intact.
 - TODO: seek a second independent game for `CON-004` and `COMB-0002` before
   making a cross-family reuse claim. One analysed game establishes boundaries,
   not prevalence or novelty.

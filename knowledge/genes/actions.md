@@ -30,3 +30,35 @@
   metric.
 - Evidence: [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
 - Novelty: not assessed.
+
+## ACT-003 — Select concealed cell for reveal
+
+- Lifecycle: `Active`
+- Claim status: `Observation`
+- Evidence quality: `Corroborated`
+- Confidence: `High`
+- Definition: the player selects one concealed position and commands its fixed
+  underlying content to be exposed.
+- Includes: uncovering one covered Minesweeper cell.
+- Excludes: automatically exposed neighbouring cells; selecting already visible
+  information; generating new random content after the selection.
+- Parameters: input method, target geometry and first-selection protection.
+- Evidence: [Minesweeper decomposition](../games/m-r/minesweeper.md).
+- Novelty: not assessed.
+
+## ACT-004 — Toggle protective hypothesis marker
+
+- Lifecycle: `Active`
+- Claim status: `Observation`
+- Evidence quality: `Corroborated`
+- Confidence: `High`
+- Definition: the player marks or unmarks a concealed position as a suspected
+  hazard without verifying its content, and the marker blocks ordinary reveal
+  while present.
+- Includes: flagging and unflagging a covered Minesweeper cell.
+- Excludes: a system-confirmed hazard; a cosmetic note with no input effect;
+  automatically revealing unmarked neighbours.
+- Parameters: marker cycle, question-mark state, reveal protection and whether
+  markers enable a bulk-reveal command.
+- Evidence: [Minesweeper decomposition](../games/m-r/minesweeper.md).
+- Novelty: not assessed.

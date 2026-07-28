@@ -9,11 +9,13 @@
 - Definition: the playable state has a fixed finite number of occupancy
   positions.
 - Includes: the 16 cells of the standard 2048 board; the fixed corner and edge
-  positions of the standard 3 × 3 Rubik's Cube.
+  positions of the standard 3 × 3 Rubik's Cube; the fixed cells of a
+  Minesweeper board.
 - Excludes: a move limit or timer; a board that expands during play.
 - Parameters: capacity and topology.
 - Evidence: [2048 decomposition](../games/0-9/2048.md) and
-  [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
+  [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md), and
+  [Minesweeper decomposition](../games/m-r/minesweeper.md).
 - Novelty: not assessed.
 
 ## CON-002 — Equality merge compatibility
@@ -72,4 +74,20 @@
   automatic random spawn; recoverability only through a restart.
 - Parameters: inverse notation and primitive-action granularity.
 - Evidence: [Rubik's Cube decomposition](../games/m-r/rubiks-cube.md).
+- Novelty: not assessed.
+
+## CON-006 — Terminal hazard exposure
+
+- Lifecycle: `Active`
+- Claim status: `Observation`
+- Evidence quality: `Corroborated`
+- Confidence: `High`
+- Definition: exposing any concealed hazard immediately ends the current
+  attempt before the completion objective is met.
+- Includes: detonating a mine by revealing its Minesweeper cell.
+- Excludes: an incorrect marker by itself; a recoverable damage or lives system;
+  random setup that does not expose a hazard.
+- Parameters: hazard count, any first-action safety exception and terminal
+  feedback.
+- Evidence: [Minesweeper decomposition](../games/m-r/minesweeper.md).
 - Novelty: not assessed.
